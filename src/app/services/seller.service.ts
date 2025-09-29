@@ -3,16 +3,19 @@ import {HttpClient} from '@angular/common/http'
 import { login, signUp } from '../data-type';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class SellerService {
   isSellerLoggedIn= new BehaviorSubject<boolean>(false);
   isLoginError= new EventEmitter<boolean>(false)
+  private baseUrl = environment.URL_SERVICIOS; // Ejemplo: http://127.0.0.1:8000/api
+  private seller = `${this.baseUrl}/seller`;
 
   constructor(private http:HttpClient, private router:Router) { }
   userSignUp(data:signUp){
-    this.http.post('http://localhost:3000/seller',
+    this.http.post(`${this.seller}`,
     data,
     {observe:'response'}).subscribe((result)=>{
       console.warn(result)

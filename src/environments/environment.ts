@@ -3,9 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  appVersion: 'v723demo1',
+  USERDATA_KEY: 'authf649fc9a5f55',
+  isMockEnabled: false,
+  apiUrl: 'api',
+  URL_BACKEND: 'http://127.0.0.1:3000/',
+  // URL_SERVICIOS: 'http://127.0.0.1:3000/api',
+  URL_SERVICIOS: 'http://127.0.0.1:3000/',
+  URL_FROTEND: 'http://localhost:4200',
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

@@ -1,3 +1,6 @@
+
+## Update Angular version
+- 14.2.13 -> 18.2.21
 ## THE IDEA IS TO IMPROVE THIS PROJECT IS DEPRECATED(old)
 |     FIRST VERSION        |      PRIMERA VERSION      |
 |--------------------------|---------------------------|
