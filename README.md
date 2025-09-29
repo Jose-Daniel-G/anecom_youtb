@@ -1,6 +1,6 @@
 ## THE IDEA IS TO IMPROVE THIS PROJECT IS DEPRECATED(old)
 |     FIRST VERSION        |      PRIMERA VERSION      |
-|------------------------------------------------------|
+|--------------------------|---------------------------|
 |![image](images/image.png)|![image](images/image1.png)|
 |![image](images/image2.png)|![image](images/image3.png)|
 
