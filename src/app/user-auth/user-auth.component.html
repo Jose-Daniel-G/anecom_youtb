@@ -26,6 +26,7 @@
   <p>Already Have Account ? <a (click)="openLogin()" >Click Here</a></p>
   </form>
  </div>
+ 
  <div *ngIf="showLogin"  class="login">
   <h1>User Login</h1>
   <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">

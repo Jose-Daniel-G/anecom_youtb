@@ -12,7 +12,6 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
@@ -20,6 +19,7 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { CarouselComponent } from './carousel/carousel.component'; 
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     UserAuthComponent,
     CartPageComponent,
     CheckoutComponent,
-    MyOrdersComponent
+    MyOrdersComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,6 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
