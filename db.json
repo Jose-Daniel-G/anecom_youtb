@@ -158,18 +158,6 @@
       "productId": 5,
       "userId": 3,
       "id": "8"
-    },
-    {
-      "id": "377d",
-      "name": "Nike Shoes",
-      "price": "3000",
-      "category": "Shoes",
-      "color": "Black",
-      "description": "Best shoes for Running",
-      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
-      "quantity": 5,
-      "productId": "4",
-      "userId": "2"
     }
   ],
   "orders": [
@@ -188,6 +176,14 @@
       "totalPrice": 6100,
       "userId": 1,
       "id": "3"
+    },
+    {
+      "id": "b151",
+      "email": "peter@email.com",
+      "address": "peter@email.com",
+      "contact": "123",
+      "totalPrice": 15100,
+      "userId": "2"
     }
   ],
   "posts": [
