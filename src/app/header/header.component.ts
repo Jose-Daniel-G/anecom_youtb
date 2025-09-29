@@ -26,13 +26,13 @@ export class HeaderComponent implements OnInit {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
           let sellerStore = localStorage.getItem('seller');
           let sellerData = sellerStore && JSON.parse(sellerStore)[0];
-          this.sellerName = sellerData.name;
+          this.sellerName.set(sellerData.name);
           this.menuType.set('seller');
         }
         else if (localStorage.getItem('user')) {
           let userStore = localStorage.getItem('user');
           let userData = userStore && JSON.parse(userStore);
-          this.userName = userData.name;
+          this.userName.set(userData.name);
           this.menuType.set('user');
           this.product.getCartList(userData.id);
         }

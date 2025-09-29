@@ -7,7 +7,7 @@
             <input  type="text" #searchInput (keyup)="searchProduct($event)"  
                   (blur)="hideSearch()"  placeholder="Search Products" />
                   
-            <button (click)="submitSearch(searchInput.value)">Search SELLER JD</button>
+            <button (click)="submitSearch(searchInput.value)">Search</button>
             
             <!-- Sugerencias de Búsqueda: Usa @if y @for -->
             @if (searchResult()) {
