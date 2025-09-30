@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule,FormsModule,RouterModule],
   templateUrl: './seller-auth.component.html',
-  styleUrls: ['./seller-auth.component.css'],
 })
 export class SellerAuthComponent implements OnInit {
   showLogin=false;

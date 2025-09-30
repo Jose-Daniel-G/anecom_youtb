@@ -20,13 +20,13 @@
     },
     {
       "name": "anil",
-      "password": "123123123",
+      "password": "123132132",
       "email": "anil@email.com",
       "id": "5"
     },
     {
       "name": "alena",
-      "password": "123123123",
+      "password": "123132132",
       "email": "alena@email.com",
       "id": "6"
     },
@@ -112,25 +112,25 @@
     {
       "name": "anil",
       "email": "anil@email.com",
-      "password": "123123123",
+      "password": "123132132",
       "id": "1"
     },
     {
       "name": "peter",
       "email": "peter@email.com",
-      "password": "123123123",
+      "password": "123132132",
       "id": "2"
     },
     {
       "name": "hyden",
       "email": "hyden@email.com",
-      "password": "123123123",
+      "password": "123132132",
       "id": "3"
     },
     {
       "name": "tony",
       "email": "tony@email.com",
-      "password": "123123123",
+      "password": "123132132",
       "id": "4"
     }
   ],

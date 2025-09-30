@@ -1,41 +1,30 @@
-<ngb-carousel *ngIf="popularProducts">
-    <ng-template  *ngFor="let item of popularProducts" ngbSlide>
-      <div class="picsum-img-wrapper">
-        <a routerLink="/details/{{item.id}}"> <img class="product-header-image" src="{{item.image}}" alt="Random first slide">
-     </a>
+<!-- Lista de productos -->
+<div class="product-list-wrapper container">
+  <h1 class="mb-4">Trendy Products</h1>
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let item of trendyProducts">
+      <div class="card h-100">
+        
+        <!-- Contenedor de imagen con altura fija -->
+        <div class="d-flex align-items-center justify-content-center bg-light" 
+             style="height: 300px; overflow: hidden;">
+          <img [src]="item.image"
+               class="img-fluid"
+               style="max-height: 100%; object-fit: contain;"
+               [alt]="item.name">
         </div>
-      <div class="carousel-caption">
-        <h3>{{item.name}}</h3>
-        <p>{{item.description}}</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-<div class="product-list-wrapper">
-<h1>Trendy Products</h1>
-<div class="row">
-  <div class="col-sm-3" *ngFor="let item of trendyProducts">
-    <div class="product-item">
-      <img src="{{item.image}}" alt="">
-    <div class="product-details">
-      <h6 class="name-head">{{item.name}}</h6>
-      <div class="product-price">
-        <h6>Price:{{item.price}}</h6>
-      </div>
-      <div class="product-color">
-        <h6>Color:{{item.color}}</h6>
-      </div>
-    </div>
-    <div class="product-footer">
-      <a routerLink="/details/{{item.id}}">View Details</a>
-      <a href="">Add to Cart</a>
 
-    </div>
+        <div class="card-body text-center">
+          <h6 class="card-title fw-semibold">{{ item.name }}</h6>
+          <p class="mb-1"><strong>Price:</strong> {{ item.price }}</p>
+          <p class="mb-0"><strong>Color:</strong> {{ item.color }}</p>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+          <a [routerLink]="['/details', item.id]" class="btn btn-sm btn-outline-primary">View Details</a>
+          <a href="" class="btn btn-sm btn-success">Add to Cart</a>
+        </div>
+      </div>
     </div>
   </div>
-
-
 </div>
-</div>
-
-  
-  

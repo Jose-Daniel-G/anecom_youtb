@@ -11,7 +11,6 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   standalone: true,
   imports: [CommonModule,FormsModule,RouterModule, NgbCarouselModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
  popularProducts:undefined|product[];

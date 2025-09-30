@@ -10,7 +10,6 @@ import { UserService } from '../services/user.service';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './user-auth.component.html',
-  styleUrls: ['./user-auth.component.css'],
 })
 export class UserAuthComponent implements OnInit {
   showLogin: boolean = true;
@@ -47,7 +46,7 @@ export class UserAuthComponent implements OnInit {
     if (this.loginForm.valid) {
       const data: login = this.loginForm.value;
       this.user.userLogin(data);
-
+      console.warn(data);
       this.user.invalidUserAuth.subscribe((result) => {
         if (result) {
           this.authError = "User not found";

@@ -16,8 +16,9 @@ docker run -p 4200:4200 angular14
 JSON Server permite crear una API REST falsa completa con cero configuración de código. Es ideal para prototipado rápido y desarrollo frontend sin necesidad de un backend real.
 
 ## SI YA HAS INSTALADO LA API DE FORMA LOCAL SOLO EJECUTA 
-```
+```bash
 npm run api
+npm run reset-db && npm run api #si has borrado la info
 ```
 ## 🚀 Instalación
 
@@ -39,7 +40,7 @@ Cualquier ubicación del sistema
 └── json-server      ← Comando disponible globalmente
 ```
 ## Correr fakeapi en la ruta donde crees el archivo db.json con la Informacion
-```
+```bash
 json-server --watch db.json
 ```
 ### Con Instalación Local  
@@ -79,7 +80,7 @@ json-server --watch db.json --port 3000
 // package.json
 {
   "scripts": {
-    "json-server": "json-server --watch db.json --port 3000"
+    "api": "json-server --watch db.json"
   }
 }
 ```
@@ -105,8 +106,7 @@ DELETE /users/1        # Eliminar usuario
 
 ### DEPENDENCIAS ADICIONALES
 ```
-npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/angular-fontawesome
-npm install vite-plugin-angular --save-dev
+npm install @fortawesome/fontawesome-free
 npm install @ng-bootstrap/ng-bootstrap @popperjs/core --force
 npm install @angular/platform-browser@18.2.14
  Remove-Item -Recurse -Force node_modules
