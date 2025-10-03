@@ -2,9 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { cart, product } from '../data-type';
 import { ProductService } from '../services/product.service';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-details',
+  standalone:true,
+  imports:[CommonModule,FormsModule],
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })

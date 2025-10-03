@@ -12,11 +12,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
   // Convertimos todas las propiedades de estado a Signals
-  public menuType = signal<'default' | 'user' | 'seller'>('default');
-  public sellerName = signal<string>("");
-  public userName = signal<string>("");
+  public menuType =     signal<'default' | 'user' | 'seller'>('default');
+  public sellerName =   signal<string>("");
+  public userName =     signal<string>("");
   public searchResult = signal<product[] | undefined>(undefined);
-  public cartItems = signal<number>(0);  
+  public cartItems =    signal<number>(0);  
   constructor(private route: Router, private product: ProductService) { }
 
   ngOnInit(): void {

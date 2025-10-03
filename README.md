@@ -18,7 +18,10 @@ JSON Server permite crear una API REST falsa completa con cero configuración de
 ## SI YA HAS INSTALADO LA API DE FORMA LOCAL SOLO EJECUTA 
 ```bash
 npm run api
-npm run reset-db && npm run api #si has borrado la info
+```
+```bash
+npm run reset-db 
+npm run api #si has borrado la info
 ```
 ## 🚀 Instalación
 

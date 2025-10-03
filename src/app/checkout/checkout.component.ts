@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { cart, order } from '../data-type';
 import { ProductService } from '../services/product.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-checkout',
+  selector: 'app-checkout',standalone:true, imports:[FormsModule],
   templateUrl: './checkout.component.html',
   styleUrls: ['./checkout.component.css']
 })

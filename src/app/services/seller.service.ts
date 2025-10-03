@@ -14,7 +14,7 @@ export class SellerService {
   private seller = `${this.baseUrl}/seller`;
 
   constructor(private http:HttpClient, private router:Router) { }
-  userSignUp(data:signUp){
+  userSignUp(data:signUp){ 
     this.http.post(`${this.seller}`,
     data,
     {observe:'response'}).subscribe((result)=>{

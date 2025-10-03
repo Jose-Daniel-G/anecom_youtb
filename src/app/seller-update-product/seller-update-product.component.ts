@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { product } from '../data-type';
 import { ProductService } from '../services/product.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-seller-update-product',
+  standalone:true,
+  imports:[CommonModule, FormsModule],
   templateUrl: './seller-update-product.component.html',
-  styleUrls: ['./seller-update-product.component.css'],
 })
 export class SellerUpdateProductComponent implements OnInit {
   productData: undefined | product;
