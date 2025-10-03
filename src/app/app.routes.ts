@@ -1,58 +1,58 @@
 import { Routes } from '@angular/router';
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './core/auth.guard';
 
 export const routes: Routes = [{
       path: '',
       loadComponent: () =>
-        import('./home/home.component').then((m) => m.HomeComponent),
+        import('./modules/home/home.component').then((m) => m.HomeComponent),
     },
     {
       path: 'user-auth',
       loadComponent: () =>
-        import('./user-auth/user-auth.component').then((m) => m.UserAuthComponent), //Login y Registro
+        import('./auth/user-auth.component').then((m) => m.UserAuthComponent), //Login y Registro
     },
     {
       path: 'seller-auth',
       loadComponent: () =>
-        import('./seller-auth/seller-auth.component').then((m) => m.SellerAuthComponent), //Login y Registro del vendedor
+        import('./modules/seller/seller-auth/seller-auth.component').then((m) => m.SellerAuthComponent), //Login y Registro del vendedor
     },
     {
       path: 'seller-home',
       loadComponent: () =>
-        import('./seller-home/seller-home.component').then((m) => m.SellerHomeComponent), //Dashboard del vendedor
+        import('./modules/seller/seller-home/seller-home.component').then((m) => m.SellerHomeComponent), //Dashboard del vendedor
       canActivate: [AuthGuard],
     },
     {
-      path: 'seller-add-product',
+      path: 'create', //create
       loadComponent: () =>
-        import('./seller-add-product/seller-add-product.component').then((m) => m.SellerAddProductComponent),
+        import('./modules/products/create/seller-add-product.component').then((m) => m.SellerAddProductComponent),
       canActivate: [AuthGuard],
     },
     {
-      path: 'seller-update-product',
+      path: 'edit', //edit
       loadComponent: () =>
-        import('./seller-update-product/seller-update-product.component').then((m) => m.SellerUpdateProductComponent),
+        import('./modules/products/edit/seller-update-product.component').then((m) => m.SellerUpdateProductComponent),
       canActivate: [AuthGuard],
     },
     {
       path: 'my-orders',
       loadComponent: () =>
-        import('./my-orders/my-orders.component').then((m) => m.MyOrdersComponent),
+        import('./modules/my-orders/my-orders.component').then((m) => m.MyOrdersComponent),
     },
     {
       path: 'checkout',
       loadComponent: () =>
-        import('./checkout/checkout.component').then((m) => m.CheckoutComponent),
+        import('./modules/cart/checkout/checkout.component').then((m) => m.CheckoutComponent),
     },
     {
       path: 'cart-page',
       loadComponent: () =>
-        import('./cart-page/cart-page.component').then((m) => m.CartPageComponent),
+        import('./modules/cart/cart-page/cart-page.component').then((m) => m.CartPageComponent),
     },
     {
       path: 'seller-update-product/:id',
       loadComponent: () =>
-        import('./seller-update-product/seller-update-product.component').then((m) => m.SellerUpdateProductComponent),
+        import('./modules/products/edit/seller-update-product.component').then((m) => m.SellerUpdateProductComponent),
     },
     {
       path: 'search/:query',
@@ -62,7 +62,7 @@ export const routes: Routes = [{
     {
       path: 'details/:productId',
       loadComponent: () =>
-        import('./product-details/product-details.component').then((m) => m.ProductDetailsComponent),
+        import('./modules/products/show/product-details.component').then((m) => m.ProductDetailsComponent),
     },
     { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: '**', redirectTo: '' }

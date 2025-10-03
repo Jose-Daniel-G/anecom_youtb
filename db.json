@@ -158,6 +158,42 @@
       "productId": 5,
       "userId": 3,
       "id": "8"
+    },
+    {
+      "id": "1620",
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "2bea",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "quantity": 1,
+      "productId": "3",
+      "userId": "2"
+    },
+    {
+      "id": "23d8",
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": "2",
+      "userId": "2"
     }
   ],
   "orders": [
@@ -176,14 +212,6 @@
       "totalPrice": 6100,
       "userId": 1,
       "id": "3"
-    },
-    {
-      "id": "b151",
-      "email": "peter@email.com",
-      "address": "peter@email.com",
-      "contact": "123",
-      "totalPrice": 15100,
-      "userId": "2"
     }
   ],
   "posts": [

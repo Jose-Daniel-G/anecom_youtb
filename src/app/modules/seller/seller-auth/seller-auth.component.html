@@ -1,0 +1,35 @@
+<div class="container my-5" >
+  <div class="card" *ngIf="!showLogin">
+    <div class="card-header">
+      <h1 class="text-center">Registro de vendedor</h1>
+    </div>
+    <div class="card-body">
+      <div class="sign-up">
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+          <input type="text" class="form-input" placeholder="Enter Name" name="name" ngModel />
+          <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel />
+          <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel />
+          <button class="form-button">Sign Up</button>
+          <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click for Login</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="card" *ngIf="showLogin">
+    <div class="card-header">
+      <h1 class="text-center">Vendedor Login</h1>
+
+    </div>
+    <div class="card-body">
+      <div class="login">
+        <p class="error-p">{{authError}}</p>
+        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+          <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel />
+          <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel />
+          <button class="form-button">Login</button>
+          <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click for sign-up</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
