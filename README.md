@@ -6,7 +6,7 @@
 |------------------------------------------|
 |      ![image](images/image.png)          |
 
-** `INITIAL VERSION` ** 
+**`INITIAL VERSION`** 
 |     FIRST VERSION        |      PRIMERA VERSION      |
 |--------------------------|---------------------------|
 |![image4](images/image4.png)|![image1](images/image1.png)|
