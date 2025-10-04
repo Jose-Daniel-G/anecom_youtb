@@ -1,11 +1,16 @@
 
 ## Update Angular version
 - 14.2.13 -> 18.2.21
-## THE IDEA IS TO IMPROVE THIS PROJECT IS DEPRECATED(old)
+
+|        IMPROVE VERSION OF THE PROJECT    |
+|------------------------------------------|
+|      ![image](images/image.png)          |
+
+** `INITIAL VERSION` ** 
 |     FIRST VERSION        |      PRIMERA VERSION      |
 |--------------------------|---------------------------|
-|![image](images/image.png)|![image](images/image1.png)|
-|![image](images/image2.png)|![image](images/image3.png)|
+|![image4](images/image4.png)|![image1](images/image1.png)|
+|![image2](images/image2.png)|![image3](images/image3.png)|
 
 - you can use docker if it doesn't work 
 ```

@@ -13,7 +13,7 @@
       <!-- Sección de Búsqueda -->
       @if (menuType() !== 'seller') {
         <form class="d-flex ms-auto me-3 nav-search">
-          <input  class="form-control me-2"  type="search"  #searchInput  (keyup)="searchProduct($event)"  (blur)="hideSearch()"  placeholder="Search Products" />
+          <input  class="form-control me-2"  type="search"  #searchInput  (keyup)="searchProduct($event)"  (blur)="hideSearch()"  placeholder="buscar productos" />
 
           <button 
             class="btn btn-outline-light" 
@@ -47,7 +47,7 @@
               <a class="nav-link" routerLink="seller-auth">Vendedor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="">Home</a>
+              <a class="nav-link" routerLink="">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="user-auth">Ingresar</a>
@@ -58,7 +58,7 @@
           }
           @case ('user') { 
             <li class="nav-item">
-              <a class="nav-link" routerLink="">Home</a>
+              <a class="nav-link" routerLink="">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link">{{ userName() | titlecase }}</a>
@@ -67,7 +67,7 @@
               <a class="nav-link" routerLink="my-orders">Mis ordenes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="userLogout()">Logout</a>
+              <a class="nav-link" (click)="userLogout()">Salir</a>
             </li>
             <li class="nav-item">
               <a 

@@ -57,7 +57,7 @@ export const routes: Routes = [{
     {
       path: 'search/:query',
       loadComponent: () =>
-        import('./search/search.component').then((m) => m.SearchComponent),
+        import('./modules/search/search.component').then((m) => m.SearchComponent),
     },
     {
       path: 'details/:productId',
